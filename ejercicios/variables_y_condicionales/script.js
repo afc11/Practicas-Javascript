@@ -2,7 +2,7 @@ let nombre = "Alberto"
 
 if (nombre !== "") {
     console.log("Hola " + nombre)
-} else{
+} else {
     console.log("Hola desconosido")
 }
 
@@ -11,9 +11,9 @@ if (nombre !== "") {
 
 const numero = 7;
 
-if ( numero % 2 === 0) {
+if (numero % 2 === 0) {
     console.log(numero + " es par")
-} else{
+} else {
     console.log(numero + " es impar")
 }
 
@@ -25,6 +25,34 @@ if (calificacion >= 60) {
     console.log("Aprobado")
 } else {
     console.log("Reprobado")
+}
+
+
+
+
+const dia = 3;
+
+switch (dia) {
+    case 1:
+        console.log("Lunes")
+        break;
+    case 2:
+        console, log("Martes")
+        break;
+    case 3:
+        console.log("Miércoles")
+        break;
+    case 4:
+        console.log("Jueves")
+        break;
+    case 5:
+        console.log("Viernes")
+        break;
+    case 6:
+        console.log("Sábado")
+        break;
+    default:
+        console.log("Domingo")
 }
 
 
