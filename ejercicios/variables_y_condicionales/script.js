@@ -19,3 +19,13 @@ if ( numero % 2 === 0) {
 
 
 
+const calificacion = 75;
+
+if (calificacion >= 60) {
+    console.log("Aprobado")
+} else {
+    console.log("Reprobado")
+}
+
+
+
