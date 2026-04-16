@@ -69,3 +69,12 @@ if (edad >= 18) {
 
 
 
+const temperatura = 21;
+
+if (temperatura < 10) {
+    console.log("Frío")
+} else if (temperatura <= 25) {
+console.log("Templado")
+} else {
+    console.log("Caluroso")
+}
