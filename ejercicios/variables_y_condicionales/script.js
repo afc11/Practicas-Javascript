@@ -95,3 +95,20 @@ if (num > 0) {
 
 
 
+const monto = 250
+
+if (monto >= 200) {
+    const descuento = monto * 0.20
+    console.log("Descuento del 20%:" + descuento)
+    console.log("Total a pagar:" + (monto - descuento))
+} else if (monto >= 100) {
+    const descuento = monto * 0.10
+    console.log("Descuento del 10%: " + descuento)
+    console.log("Total a pagar: " + (monto - descuento))
+} else {
+    console.log("Sin descuento. Total a pagar: " + monto)
+}
+
+
+
+
