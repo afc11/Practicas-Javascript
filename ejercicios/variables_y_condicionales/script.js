@@ -127,3 +127,14 @@ console.log("Isósceles")
 
 
 
+const contraseña = "miClave123"
+
+if (contraseña.length >=8) {
+    console.log("Válida")
+} else {
+    console.log("Demasiado corta")
+}
+
+
+
+
