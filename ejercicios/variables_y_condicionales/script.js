@@ -116,10 +116,10 @@ const lado1 = 5
 const lado2 = 5
 const lado3 = 8
 
-if ( lado1 === lado2 && lado2 === lado3) {
+if (lado1 === lado2 && lado2 === lado3) {
     console.log("Equilátero")
 } else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) {
-console.log("Isósceles")
+    console.log("Isósceles")
 } else {
     console.log("Escaleno")
 }
@@ -129,7 +129,7 @@ console.log("Isósceles")
 
 const contraseña = "miClave123"
 
-if (contraseña.length >=8) {
+if (contraseña.length >= 8) {
     console.log("Válida")
 } else {
     console.log("Demasiado corta")
@@ -138,3 +138,29 @@ if (contraseña.length >=8) {
 
 
 
+const mes = 7
+
+switch (mes) {
+    case 12:
+    case 1:
+    case 2:
+        console.log("Verano")
+        break;
+    case 3:
+    case 4:
+    case 5:
+        console.log("Otoño")
+        break;
+    case 6:
+    case 7:
+    case 8:
+        console.log("Invierno")
+        break;
+    case 9:
+    case 10:
+    case 11:
+        console.log("Primavera")
+        break;
+    default:
+        console.log("Mes inválido")
+} 
