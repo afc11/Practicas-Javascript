@@ -74,7 +74,24 @@ const temperatura = 21;
 if (temperatura < 10) {
     console.log("Frío")
 } else if (temperatura <= 25) {
-console.log("Templado")
+    console.log("Templado")
 } else {
     console.log("Caluroso")
 }
+
+
+
+
+const num = -7
+
+if (num > 0) {
+    console.log("Positivo")
+} else if (num < 0) {
+    console.log("Negativo")
+} else {
+    console.log("Cero")
+}
+
+
+
+
