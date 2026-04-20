@@ -205,3 +205,14 @@ switch (operacion) {
     default:
         console.log("Operación no válida")
 }
+
+
+
+
+const email = "usuario@correo.com"
+
+if (email.includes("@") && email.includes(".")) {
+    console, log("Válido")
+} else {
+    console.log("Inválido")
+}
