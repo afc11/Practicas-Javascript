@@ -216,3 +216,22 @@ if (email.includes("@") && email.includes(".")) {
 } else {
     console.log("Inválido")
 }
+
+
+
+
+const opciones = 3
+
+switch (opciones) {
+    case 1:
+        console, log("Iniciar")
+        break;
+    case 2:
+        console.log("Configurar")
+        break;
+    case 3:
+        console.log("Salir")
+        break;
+    default:
+        console.log("Opción no válida")
+}
