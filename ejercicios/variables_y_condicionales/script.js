@@ -164,3 +164,16 @@ switch (mes) {
     default:
         console.log("Mes inválido")
 } 
+
+
+
+
+const puntos = 75
+
+if (puntos <= 50) {
+    console.log("Novato")
+} else if (puntos <= 100) {
+    console.log("Intermedio")
+} else {
+    console.log("Experto")
+}
