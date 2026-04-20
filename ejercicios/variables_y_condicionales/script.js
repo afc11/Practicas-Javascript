@@ -163,7 +163,7 @@ switch (mes) {
         break;
     default:
         console.log("Mes inválido")
-} 
+}
 
 
 
@@ -176,4 +176,32 @@ if (puntos <= 50) {
     console.log("Intermedio")
 } else {
     console.log("Experto")
+}
+
+
+
+
+const operacion = "*"
+const num1 = 10
+const num2 = 5
+
+switch (operacion) {
+    case "*":
+        console.log(num1 + " + " + num2 + "=" + (num1 + num2))
+        break;
+    case "-":
+        console.log(num1 + " - " + num2 + "="(num1 - num2))
+        break;
+    case "*":
+        console.log(num1 + " * " + num2 + " = "(num1 * num2))
+        break;
+    case "/":
+        if (num2 === 0) {
+            console.log("Error: no se puede dividir por cero")
+        } else {
+            console.log(num1 + "/" + num2 + "=" + (num1 / num2))
+        }
+        break;
+    default:
+        console.log("Operación no válida")
 }
