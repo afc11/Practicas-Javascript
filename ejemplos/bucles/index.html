@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../javascript.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bucles/Ciclos</title>
+  </head>
+  <body>
+    <h1>Bucles/Ciclos</h1>
+
+    <main>
+      <article>
+        <h2>Bucle For</h2>
+        <pre><code><span class="function">for</span> (<span class="keyword">let</span> <span class="variable">i</span> = <span class="number">0</span>; <span class="variable">i</span> < <span class="number">5</span>; <span class="variable">i</span>++) {
+    <span class="keyword">console</span>.<span class="property">log</span>(<span class="string">"Vuelta número: "</span> + <span class="variable">i</span>);
+}
+<span class="comment">// Vuelta número: 0</span>
+<span class="comment">// Vuelta número: 1</span>
+<span class="comment">// Vuelta número: 2</span>
+<span class="comment">// Vuelta número: 3</span>
+<span class="comment">// Vuelta número: 4</span></code></pre>
+      </article>
+
+      <article>
+        <h2>Bucle While</h2>
+        <pre><code><span class="keyword">let</span> <span class="variable">contador</span> = <span class="number">0</span>;
+<span class="function">while</span> (<span class="variable">contador</span> < 10) {
+    <span class="keyword">console</span>.<span class="property">log</span>(<span class="string">"Vuelta usando while: "</span> + <span class="variable">contador</span>);
+    <span class="variable">contador</span>++;
+}
+<span class="comment">// Vuelta usando while: 0</span>
+<span class="comment">// Vuelta usando while: 1</span>
+<span class="comment">// Vuelta usando while: 2</span>
+<span class="comment">// Vuelta usando while: 3</span>
+<span class="comment">// Vuelta usando while: 4</span>
+<span class="comment">// Vuelta usando while: 5</span>
+<span class="comment">// Vuelta usando while: 6</span>
+<span class="comment">// Vuelta usando while: 7</span>
+<span class="comment">// Vuelta usando while: 8</span>
+<span class="comment">// Vuelta usando while: 9</span></code></pre>
+      </article>
+
+      <article>
+        <h2>Bucle Do while</h2>
+        <pre><code><span class="variable">contador</span> = <span class="number">0</span>;
+<span class="function">do</span> {
+    <span class="keyword">console</span>.<span class="property">log</span>(<span class="string">"Vuelta usando do while: "</span> + <span class="variable">contador</span>);
+    <span class="variable">contador</span>++;
+} <span class="function">while</span> (<span class="variable">contador</span> < 10)
+<span class="comment">// Vuelta usando do while: 0</span>
+<span class="comment">// Vuelta usando do while: 1</span>
+<span class="comment">// Vuelta usando do while: 2</span>
+<span class="comment">// Vuelta usando do while: 3</span>
+<span class="comment">// Vuelta usando do while: 4</span>
+<span class="comment">// Vuelta usando do while: 5</span>
+<span class="comment">// Vuelta usando do while: 6</span>
+<span class="comment">// Vuelta usando do while: 7</span>
+<span class="comment">// Vuelta usando do while: 8</span>
+<span class="comment">// Vuelta usando do while: 9</span></code></pre>
+      </article>
+    </main>
+  </body>
+
+  <script>
+    /* ----------------------- For ----------------------- */
+    for (let i = 0; i < 5; i++) {
+      console.log("Vuelta número: " + i);
+    }
+
+    console.log("-----------------------");
+
+    /* ----------------------- While ----------------------- */
+    let contador = 0;
+    while (contador < 10) {
+      console.log("Vuelta usando while: " + contador);
+      contador++;
+    }
+
+    console.log("-----------------------");
+
+    /* ----------------------- Do while ----------------------- */
+    contador = 0;
+    do {
+      console.log("Vuelta usando do while: " + contador);
+      contador++;
+    } while (contador < 10);
+
+    console.log("-----------------------");
+  </script>
+</html>
