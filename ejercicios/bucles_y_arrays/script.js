@@ -50,3 +50,11 @@ console.log(palabrasLargas)
 
 
 
+const numer = 5
+let multiplicador = 1
+
+with (multiplicador <= 10) {
+    const resultado = numer * multiplicador
+    console.log(numer + " x " + multiplicador + " = " + resultado)
+    multiplicador++
+}
