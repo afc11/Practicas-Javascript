@@ -22,3 +22,17 @@ while (contador >= 1) {
 
 
 
+const num = [4,17,3,25,8,11]
+let mayor = num [0]
+
+for (let i = 1;i < num.length; i++) {
+    if (num[i] > mayor){
+        mayor = num[i]
+    }
+}
+
+console.log("El número mayor es: " + mayor)
+
+
+
+
