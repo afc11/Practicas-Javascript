@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1100px;
+    background-color: rgb(231, 231, 231);
+}
+
+header {
+    background-color: rgb(95, 139, 204);
+    border-bottom: 2px solid rgb(86, 123, 180);
+    padding: 10px 1rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    width: 1000px;
+    margin-inline: auto;
+}
+
+.aclaraciones {
+    margin-bottom: 1rem;
+}
+
+
+table tr {
+    background-color: #fff;
+}
+
+table th,
+table td {
+    border-radius: 3px;
+    padding: 5px 1rem;
+}
+
+table td:first-of-type,
+table .esperado,
+table .resultado {
+    text-wrap: nowrap;
+}
+
+table td {
+    background-color: bisque;
+    border: 1px solid rgb(226, 204, 176);
+}
+
+table tr.resuelto td.resultado {
+    background-color: #bffdbf;
+    border: 1px solid #9cd4ba;
+}
+
+table tr.error td.resultado {
+    background-color: #f79494;
+    border: 1px solid #df8080;
+}
