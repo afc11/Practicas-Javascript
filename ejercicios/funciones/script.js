@@ -22,3 +22,9 @@ function calculadora(num1, num2, operador) {
     }
 }
 
+
+
+
+function areaRectangulo(base, altura) {
+    return base * altura
+}
