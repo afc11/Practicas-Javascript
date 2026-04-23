@@ -43,3 +43,10 @@ const esPar = (numero) => {
 
 
 
+const celsiusAFahrenheit = (celsius) => {
+    return (celsius * 9/5) + 32
+}
+
+
+
+
