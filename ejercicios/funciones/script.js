@@ -28,3 +28,18 @@ function calculadora(num1, num2, operador) {
 function areaRectangulo(base, altura) {
     return base * altura
 }
+
+
+
+
+const esPar = (numero) => {
+    if (numero % 2 === 0) {
+        return "es par"
+    } else {
+        return "es impar"
+    }
+}
+
+
+
+
