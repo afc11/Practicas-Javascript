@@ -65,3 +65,12 @@ const calificarNota = (nota) => {
 
 
 
+const sumarArray = (numeros) => {
+    let suma = 0
+
+    for (let i = 0; i < numeros.length; i++){
+        suma = suma + numeros [i]
+    }
+
+    return suma
+}
