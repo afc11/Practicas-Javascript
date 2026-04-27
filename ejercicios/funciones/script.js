@@ -74,3 +74,21 @@ const sumarArray = (numeros) => {
 
     return suma
 }
+
+
+
+
+const encontrarMaximoPar = (numeros) =>{
+    let maximoPar = null
+
+    for (let i = 0; i < numeros.length; i++){
+        if (numeros[i] % 2 === 0){
+            if (maximoPar === null || numeros[i] > maximoPar) {
+                maximoPar = numeros[i]
+            }
+        }
+    }
+}
+
+
+
