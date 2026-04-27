@@ -106,3 +106,10 @@ const contarVocales = (Array) => {
     }
     return contador;
 }
+
+
+
+
+const dobleNumeros = (numeros) => {
+  return numeros.map(numero => numero * 2);
+}
