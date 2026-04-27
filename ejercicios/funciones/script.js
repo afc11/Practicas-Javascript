@@ -44,7 +44,7 @@ const esPar = (numero) => {
 
 
 const celsiusAFahrenheit = (celsius) => {
-    return (celsius * 9/5) + 32
+    return (celsius * 9 / 5) + 32
 }
 
 
@@ -68,8 +68,8 @@ const calificarNota = (nota) => {
 const sumarArray = (numeros) => {
     let suma = 0
 
-    for (let i = 0; i < numeros.length; i++){
-        suma = suma + numeros [i]
+    for (let i = 0; i < numeros.length; i++) {
+        suma = suma + numeros[i]
     }
 
     return suma
@@ -78,17 +78,16 @@ const sumarArray = (numeros) => {
 
 
 
-const encontrarMaximoPar = (numeros) =>{
-    let maximoPar = null
+const encontrarMaximoPar = (numeros) => {
+  let maximoPar = null;
 
-    for (let i = 0; i < numeros.length; i++){
-        if (numeros[i] % 2 === 0){
-            if (maximoPar === null || numeros[i] > maximoPar) {
-                maximoPar = numeros[i]
-            }
-        }
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] % 2 === 0) {
+      if (maximoPar === null || numeros[i] > maximoPar) {
+        maximoPar = numeros[i];
+      }
     }
+  }
+
+  return maximoPar;
 }
-
-
-
