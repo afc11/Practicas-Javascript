@@ -79,15 +79,30 @@ const sumarArray = (numeros) => {
 
 
 const encontrarMaximoPar = (numeros) => {
-  let maximoPar = null;
+    let maximoPar = null;
 
-  for (let i = 0; i < numeros.length; i++) {
-    if (numeros[i] % 2 === 0) {
-      if (maximoPar === null || numeros[i] > maximoPar) {
-        maximoPar = numeros[i];
-      }
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] % 2 === 0) {
+            if (maximoPar === null || numeros[i] > maximoPar) {
+                maximoPar = numeros[i];
+            }
+        }
     }
-  }
 
-  return maximoPar;
+    return maximoPar;
+}
+
+
+
+
+const contarVocales = (Array) => {
+    const vocales = ["a", "e", "i", "o", "u"]
+    let contador = 0
+
+    for (let i = 0; i < Array.length; i++) {
+        if (vocales.includes(Array[i].toLowerCase())) {
+            contador++
+        }
+    }
+    return contador;
 }
