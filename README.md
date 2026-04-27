@@ -9,6 +9,7 @@ Ejemplos de javascript aplicado a páginas
 - [Condicionales](./ejemplos/condicionales/)
 - [Bucles/Ciclos](./ejemplos/bucles/)
 - [Listas (arrays)](./ejemplos/arrays/)
+- [Funciones](./ejemplos/calculadora/)
 
 ## Ejercicios
 
