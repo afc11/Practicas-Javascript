@@ -9,3 +9,9 @@ btn.addEventListener("click", () => {
 
 
 
+const texto = document.getElementById("texto")
+const BTN = document.getElementById("btnToggle")
+
+BTN.addEventListener("click", () => {
+    texto.classList.toggle("activo")
+})
