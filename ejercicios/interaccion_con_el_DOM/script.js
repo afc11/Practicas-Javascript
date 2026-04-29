@@ -24,8 +24,14 @@ const btnAgregar = document.getElementById("btnAgregar")
 const lista = document.getElementById("lista")
 
 btnAgregar.addEventListener("click", () => {
+    
     const li = document.createElement("li")
     li.textContent = input.value
+
+li.addEventListener ("click", () => {
+lista.removeChild(li)
+})
+
     lista.appendChild(li)
     input.value = ""
  })
