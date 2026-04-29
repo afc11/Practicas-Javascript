@@ -35,3 +35,21 @@ lista.removeChild(li)
     lista.appendChild(li)
     input.value = ""
  })
+
+
+
+
+ const contador = document.getElementById("contador")
+ const sumar = document.getElementById("sumar")
+ const restar = document.getElementById("restar")
+
+ sumar.addEventListener("click", () => {
+    contador.textContent = parseInt(contador.textContent) + 1
+ })
+
+ restar.addEventListener("click", () => {
+    contador.textContent = parseInt(contador.textContent) - 1
+ })
+
+
+
