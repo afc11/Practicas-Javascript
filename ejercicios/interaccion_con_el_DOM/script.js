@@ -70,20 +70,27 @@ const listaTodo = document.getElementById("listaTodo")
 
 btnTodo.addEventListener("click", () => {
     const li = document.createElement("li")
-    li.textContent = inputlista.value
 
-    li.addEventListener("click", () => {
-        li.classList.toggle("completada")
-    })
+    const span = document.createElement("SPAN")
+    span.textContent = inputlista.value
 
     const btnEliminar = document.createElement("button")
     btnEliminar.textContent = "❌"
-    btnEliminar.addEventListener("click", (e) => {
-    e.stopPropagation()
-    listaTodo.removeChild(li)
-    })
 
+    li.appendChild(span)
     li.appendChild(btnEliminar)
     listaTodo.appendChild(li)
     inputlista.value = ""
+
+})
+
+
+
+
+listaTodo.addEventListener("click", (e) => {
+    if(e.target.tagName === "BUTTON") {
+        listaTodo.removeChild(e.target.parentElement)
+    } else if (e.target.tagName === "SPAN") {
+        e.target.classList.toggle("completada")
+    }
 })
