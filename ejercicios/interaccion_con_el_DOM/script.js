@@ -53,3 +53,14 @@ lista.removeChild(li)
 
 
 
+
+ const inputPreview = document.getElementById("inputPreview")
+ const preview = document.getElementById("preview")
+
+ inputPreview.addEventListener("input", () => {
+    preview.textContent = inputPreview.value
+ })
+
+
+
+
