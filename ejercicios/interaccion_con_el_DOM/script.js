@@ -64,3 +64,26 @@ lista.removeChild(li)
 
 
 
+const inputlista = document.getElementById("inputlista")
+const btnTodo = document.getElementById("btnTodo")
+const listaTodo = document.getElementById("listaTodo")
+
+btnTodo.addEventListener("click", () => {
+    const li = document.createElement("li")
+    li.textContent = inputlista.value
+
+    li.addEventListener("click", () => {
+        li.classList.toggle("completada")
+    })
+
+    const btnEliminar = document.createElement("button")
+    btnEliminar.textContent = "❌"
+    btnEliminar.addEventListener("click", (e) => {
+    e.stopPropagation()
+    listaTodo.removeChild(li)
+    })
+
+    li.appendChild(btnEliminar)
+    listaTodo.appendChild(li)
+    inputlista.value = ""
+})
