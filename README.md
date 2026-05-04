@@ -18,3 +18,4 @@ Ejemplos de javascript aplicado a páginas
 - [Ejercicios bucles y listas](./ejercicios/bucles_y_arrays/)
 - [Ejercicios de funciones](./ejercicios/funciones/)
 - [Interacción con la página (DOM)](./ejercicios/interaccion_con_el_DOM/)
+- [Asincronía y Fetch API](./ejercicios/asincronia_y_fetch/)
