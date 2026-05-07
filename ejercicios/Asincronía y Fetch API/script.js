@@ -17,8 +17,11 @@ if (!rec.ok)throw new Error("Error al llamar a la API");
             });
 
     });
+
         .catch((error) => console.error(error));
 
      }
 
      cargarPokemons();
+
+     
