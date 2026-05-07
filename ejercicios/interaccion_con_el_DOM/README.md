@@ -51,6 +51,9 @@ Dado las siguientes etiquetas HTML
 <button id="restar">-</button>
 ```
 
+> [!TIP]
+> Convertir el valor del `#contador` a numero `parseInt(contador.value)
+
 Incrementar y decrementar el contador.
 
 ## Ejercicio 6 - Input en tiempo real
@@ -98,6 +101,6 @@ Modificar la manera de agregar `<li>` a la lista por un array `let tareas = [];`
 > [!TIP]
 > Por cada cambio:
 >
-> - Agregar contenido al array.
-> - Limpiar contendio `lista.innerHTML = ""`.
-> - Renderizar denuevo `.map()` (recomendación usar función de renderizado).
+> 1. Agregar contenido al array `tareas.push(input.value)`.
+> 2. Limpiar contendio `lista.innerHTML = ""`.
+> 3. Renderizar denuevo `.map()` (recomendación usar función de renderizado).

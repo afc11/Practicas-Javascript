@@ -11,6 +11,8 @@ Ejemplos de javascript aplicado a páginas
 - [Listas (arrays)](./ejemplos/arrays/)
 - [Funciones](./ejemplos/calculadora/)
 - [Interacción con la página (DOM)](./ejemplos/calculadora/)
+- [Objeto JSON](./ejemplos/objetosJSON/)
+- [Asincronía y Fetch API](./ejemplos/fetchAPI/)
 
 ## Ejercicios
 
@@ -18,3 +20,4 @@ Ejemplos de javascript aplicado a páginas
 - [Ejercicios bucles y listas](./ejercicios/bucles_y_arrays/)
 - [Ejercicios de funciones](./ejercicios/funciones/)
 - [Interacción con la página (DOM)](./ejercicios/interaccion_con_el_DOM/)
+- [Asincronía y Fetch API](./ejercicios/asincronia_y_fetch/)

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1></h1>
+
+    <ul>
+      <li></li>
+    </ul>
+  </body>
+
+  <script>
+    const titulo = document.querySelector("h1");
+    const hobbies = document.querySelector("ul li");
+
+    const programador = {
+      nombre: "Elias",
+      edad: 26,
+      esProgramaodr: true,
+      hobbies: ["programar", "pintar"],
+      saludar: () => console.log("Hola " + programador.nombre),
+      caracteristicas: {
+        pelo: "negro",
+        ojos: "verdes",
+        vigote: true,
+      },
+      proyectos: [
+        {
+          nombre: "Proyecto 1",
+          fecha: "4/5/2026",
+        },
+        {
+          nombre: "Proyecto 2",
+          fecha: "4/5/2026",
+        },
+      ],
+    };
+
+    // Obtener el contendido del objeto JSON
+    titulo.textContent = programador.nombre;
+    hobbies.textContent = programador.hobbies[1];
+
+    // Ejecutar función dentro del objeto programador
+    programador.saludar();
+
+    // Acceder al primer objeto dentro del array proyectos del programador
+    console.log(programador.proyectos[0].nombre);
+    console.log(programador.proyectos[0].fecha);
+  </script>
+</html>
