@@ -74,3 +74,22 @@ const cargarPokemons = () => {
 btnLista.addEventListener("click", () => {
     cargarPokemons();
 });
+
+
+
+
+const btnError = document.getElementById("btnError");
+const error = document.getElementById("error");
+
+btnError.addEventListener("click", () => {
+    fetch("https://pokeapi.co/api/v2/pokemon/pokemoninvalido123")
+        .then((res) => {
+            if (!res.ok) throw new Error("404");
+            return res.json();
+        })
+        .then((data) => console.log(data))
+        .catch((err) => {
+            error.textContent = "Ocurrió un error al cargar los datos";
+            error.style.display = "block";
+        });
+});
