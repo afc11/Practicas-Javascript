@@ -31,3 +31,36 @@ const cargarPokemon = (pokemon) => {
         })
         .catch((error) => console.error(error));
 }
+
+
+
+
+const lista = document.getElementById("lista");
+const btnLista = document.getElementById("btnLista");
+
+const cargarPokemons = () => {
+    fetch("https://pokeapi.co/api/v2/pokemon")
+        .then((res) => {
+            if (!res.ok) throw new Error("Error al cargar la lista");
+            return res.json();
+        })
+        .then((data) => {
+            lista.innerHTML = "";
+
+            data.results.map((pokemon) => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+
+                a.textContent = pokemon.name;
+                a.href = pokemon.url;
+
+                li.appendChild(a);
+                lista.appendChild(li);
+            });
+        })
+        .catch((error) => console.error(error));
+}
+
+btnLista.addEventListener("click", () => {
+    cargarPokemons();
+});
