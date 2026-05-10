@@ -37,8 +37,11 @@ const cargarPokemon = (pokemon) => {
 
 const lista = document.getElementById("lista");
 const btnLista = document.getElementById("btnLista");
+const loading = document.getElementById("loading");
 
 const cargarPokemons = () => {
+    loading.style.display = "block";
+    lista.innerHTML = "";
     fetch("https://pokeapi.co/api/v2/pokemon")
         .then((res) => {
             if (!res.ok) throw new Error("Error al cargar la lista");
@@ -46,6 +49,9 @@ const cargarPokemons = () => {
         })
         .then((data) => {
             lista.innerHTML = "";
+            setTimeout(() => {
+                loading.style.display = "none";
+
 
             data.results.map((pokemon) => {
                 const li = document.createElement("li");
@@ -57,8 +63,12 @@ const cargarPokemons = () => {
                 li.appendChild(a);
                 lista.appendChild(li);
             });
+                        }, 2000);
+
         })
-        .catch((error) => console.error(error));
+        .catch((error) => 
+            loading.style.display = "none",
+            console.error(error));
 }
 
 btnLista.addEventListener("click", () => {
