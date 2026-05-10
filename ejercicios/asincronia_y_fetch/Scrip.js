@@ -93,3 +93,24 @@ btnError.addEventListener("click", () => {
             error.style.display = "block";
         });
 });
+
+
+
+
+const btnEncadenado = document.getElementById("btnEncadenado");
+const inputEncadenado = document.getElementById("inputEncadenado");
+
+btnEncadenado.addEventListener("click", () => {
+    const pokemon = inputEncadenado.value.toLowerCase();
+
+    fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon)
+        .then((res) => {
+            if (!res.ok) throw new Error("Pokemon no encontrado");
+            return res.json();
+        })
+        .then((data) => {
+            const habilidad = data.abilities[0].ability.name;
+            window.location.href = "habilidad.html?habilidad=" + habilidad;
+        })
+        .catch((err) => console.error(err));
+});
